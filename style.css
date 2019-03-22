@@ -1,0 +1,100 @@
+body, input, button, input::placeholder {
+  font-family: sans-serif;
+}
+
+.buget {
+  margin: 0 auto;
+}
+
+.wrap {
+  width: 300px;
+  border: 1px solid #cccccc;
+  border-radius: 5px;
+  padding: 15px 20px;
+  position: relative;
+  margin-top: 5px;
+}
+.wrap p {
+  margin: 0 0 5px 0;
+}
+.wrap .name {
+  font-size: 16px;
+  display: inline;
+}
+.wrap .amount {
+  float: right;
+  margin-right: 50px;
+  font-size: 20px;
+  font-weight: bold;
+}
+.wrap .action {
+  position: absolute;
+  top: 13px;
+  right: 10px;
+  background: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.total-budget {
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.total-balance {
+  display: inline;
+}
+.total-balance > span {
+  color: green;
+  font-weight: bold;
+}
+.total-spendings {
+  float: right;
+  margin: 0;
+  margin-right: 10px;
+}
+.total-spendings > span {
+  color: orange;
+  font-weight: bold;
+}
+
+.budget-display {
+  margin-bottom: 20px;
+}
+
+input, #submit {
+  box-sizing: border-box;
+  padding: 10px;
+  outline: none;
+  border: 1px solid grey;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+
+#spent-for {
+  width: 65%;
+}
+
+#spent-amount {
+  width: 32%;
+}
+
+#submit {
+  background: green;
+  display: block;
+  color: white;
+  width: 30%;
+  padding: 10px 40px;
+  float: right;
+  border-radius: 25px;
+  margin-right: 10px;
+}
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/*# sourceMappingURL=style.css.map */

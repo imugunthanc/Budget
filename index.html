@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,500,600,700" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="theme-color" content="#3367D6" />
+    <meta name="Description" content="Budget Calculator">
+    <link rel="manifest" href="manifest.json">
+    <link rel="prefetch">
+    <!-- <link rel="preload"> -->
+    <link rel="preconnect">
+    <title>Budget Calculator</title>
+</head>
+
+<body>
+    <div class="Budget">
+        <div class="budget-display">
+            <p class="total-budget">Total Budget: <span>0</span></p>
+            <p class="total-balance">Available : <span>0</span></p>
+            <p class="total-spendings">Spendings : <span>0</span></p>
+        </div>
+        <div class="budget-control clearfix">
+            <input type="text" id="spent-for" placeholder="Enter a name">
+            <input type="number" id="spent-amount" placeholder="Enter amount">
+            <button id="submit">Add</button>
+        </div>
+    </div>
+    <div class="tracker">
+        <!-- <div class="wrap">
+            <p class="name">Food</p>
+            <p class="amount">500</p>
+            <button class="action"><i class="material-icons">delete_outline</i></button>
+        </div> -->
+    </div>
+    <script src="storage.js"></script>
+    <script src="ui.js"></script>
+    <script src="budget.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
