@@ -32,7 +32,6 @@ function storageCheck() {
         localStorage.setItem('dom', JSON.stringify({ queue: [] }));
     }
 }
-
 function displayOld() {
     var oldDom = JSON.parse(localStorage.getItem('dom'));
     var outputs = "";
@@ -46,7 +45,6 @@ function displayOld() {
     });
     document.querySelector(".tracker").innerHTML = outputs;
 }
-
 function deleteItem() {
     let tracker = document.querySelector('.tracker');
     tracker.addEventListener('click', () => {
