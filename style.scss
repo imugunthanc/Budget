@@ -41,6 +41,11 @@ body, input, button, input::placeholder{
         text-align: center;
         text-transform: uppercase;
         font-weight: bold;
+        .material-icons{
+            vertical-align: bottom;
+            font-size: 20px;
+            cursor: pointer;
+        }
     }
     &-balance{
         display: inline;

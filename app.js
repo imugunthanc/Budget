@@ -66,7 +66,6 @@ function deleteItem() {
     })
 }
 deleteItem();
-
 //Clear All Inputs and Rest the Budget Value//
 document.getElementById('clear-all').addEventListener('click', ClearAll);
 // document.getElementById('clear-all').addEventListener('click', reCalculate);
@@ -86,7 +85,6 @@ function popup() {
     }
     return budgetInput;
 }
-
 function reCalculate() {
     let list = JSON.parse(localStorage.getItem('dom'));
     let calcSpend = 0;
@@ -101,3 +99,11 @@ function reCalculate() {
     localStorage.setItem('spendings', calcSpend);
     localStorage.setItem('available', avail);
 }
+
+
+// document.getElementById('edit').addEventListener('click', function () {
+//     console.log('clicked');
+//     let editCont = document.querySelector('.total-budget span');
+//     editCont.setAttribute('contenteditable', true);
+//     console.log(editCont.innerHTML);
+// })

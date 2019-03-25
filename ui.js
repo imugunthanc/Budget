@@ -30,5 +30,4 @@ class Paint {
             this.spendingName.value = '';
         }
     }
-
 }

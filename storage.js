@@ -11,7 +11,6 @@ class Storage {
         //             ]
         //     };
         this.counter;
-
     }
     getLocalStorage() {
         if (localStorage.getItem('available') === null) {
@@ -20,14 +19,12 @@ class Storage {
         else {
             this.available = localStorage.getItem('available');
         }
-
         if (localStorage.getItem('spendings') === null) {
             this.spendings = 0;
         }
         else {
             this.spendings = localStorage.getItem('spendings');
         }
-
         if (localStorage.getItem('budget') === null) {
             this.budget = 1000;
         }
@@ -67,5 +64,4 @@ class Storage {
         localStorage.setItem('counter', JSON.stringify(countCheck));
         return this.counter;
     }
-
 }

@@ -41,6 +41,11 @@ body, input, button, input::placeholder {
   text-transform: uppercase;
   font-weight: bold;
 }
+.total-budget .material-icons {
+  vertical-align: bottom;
+  font-size: 20px;
+  cursor: pointer;
+}
 .total-balance {
   display: inline;
 }
