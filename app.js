@@ -37,8 +37,8 @@ function displayOld() {
     oldDom.queue.forEach(item => {
         outputs +=
             `<div class="wrap">
-                <p class="name">${item.name}</p>
-                <p class="amount">${item.price}</p>
+                <p class="name" contenteditable="true">${item.name}</p>
+                <p class="amount" contenteditable="true">${item.price}</p>
                 <p class="item-id">${item.id}</p>
                 <button class="action"><i class="material-icons">delete_outline</i></button>
             </div>`;

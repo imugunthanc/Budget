@@ -17,8 +17,8 @@ class Paint {
         else {
             let child =
                 `<div class="wrap">
-                <p class="name">${spentFor}</p>
-                <p class="amount">${output}</p>
+                <p class="name" contenteditable="true">${spentFor}</p>
+                <p class="amount" contenteditable="true">${output}</p>
                 <p class="item-id">${count}</p>
                 <button class="action"><i class="material-icons">delete_outline</i></button>
             </div>`;
