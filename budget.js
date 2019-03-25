@@ -14,7 +14,6 @@ class Budget {
             this.spendings.textContent = this.spent;
             this.budget.textContent = this.budg;
             storage.setLocalStorage(this.bal, this.spent, this.budg);
-            console.log(this.bal);
             if (this.bal < 0) {
                 this.balance.style.color = "red";
             }

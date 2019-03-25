@@ -10,6 +10,7 @@ class Paint {
     addition() {
         let output = parseInt(this.spendingAmount.value);
         let spentFor = this.spendingName.value;
+        let count = storage.pushIt();
         if (output === '' || spentFor === '') {
             console.log('Empty');
         }
@@ -18,18 +19,16 @@ class Paint {
                 `<div class="wrap">
                 <p class="name">${spentFor}</p>
                 <p class="amount">${output}</p>
+                <p class="item-id">${count}</p>
                 <button class="action"><i class="material-icons">delete_outline</i></button>
             </div>`;
             this.tracker.insertAdjacentHTML('afterbegin', child);
             var newInput = storage.getLocalStorage();
-            // storage.setLocalDom(output, spentFor);
-            // console.log(storage.getLocalDom());
             var newBudg = new Budget(newInput.available, newInput.spendings, newInput.budget);
             newBudg.displayBudget(output);
-            storage.pushIt();
             this.spendingAmount.value = '';
             this.spendingName.value = '';
         }
-
     }
+
 }
