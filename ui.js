@@ -10,11 +10,11 @@ class Paint {
     addition() {
         let output = parseInt(this.spendingAmount.value);
         let spentFor = this.spendingName.value;
-        let count = storage.pushIt();
-        if (output === '' || spentFor === '') {
-            console.log('Empty');
+        if (this.spendingAmount.value === '' || spentFor === '') {
+            // console.log('Empty');
         }
         else {
+            let count = storage.pushIt();
             let child =
                 `<div class="wrap">
                 <p class="name" contenteditable="true">${spentFor}</p>

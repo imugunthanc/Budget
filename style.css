@@ -93,6 +93,7 @@ input, #submit {
   float: right;
   border-radius: 25px;
   margin-right: 10px;
+  cursor: pointer;
 }
 
 .clearfix::after {

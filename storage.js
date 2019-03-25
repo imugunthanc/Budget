@@ -55,7 +55,7 @@ class Storage {
         var inPrice = document.getElementById('spent-amount');
         let countCheck = parseInt(localStorage.getItem('counter'));
         restoredDom.queue.push({
-            id: this.counter,
+            id: countCheck,
             name: inName.value,
             price: inPrice.value
         });

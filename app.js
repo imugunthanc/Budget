@@ -35,15 +35,17 @@ function displayOld() {
     var oldDom = JSON.parse(localStorage.getItem('dom'));
     var outputs = "";
     oldDom.queue.forEach(item => {
-        outputs +=
+        outputs =
             `<div class="wrap">
                 <p class="name" contenteditable="true">${item.name}</p>
                 <p class="amount" contenteditable="true">${item.price}</p>
                 <p class="item-id">${item.id}</p>
                 <button class="action"><i class="material-icons">delete_outline</i></button>
             </div>`;
+        console.log(outputs);
+        document.querySelector(".tracker").insertAdjacentHTML('afterbegin', outputs);
     });
-    document.querySelector(".tracker").innerHTML = outputs;
+    // document.querySelector(".tracker").innerHTML = outputs;
 }
 function deleteItem() {
     let tracker = document.querySelector('.tracker');
@@ -73,7 +75,7 @@ function ClearAll() {
     let check = popup();
     storage.setLocalStorage(check, 0, check);
     localStorage.setItem('dom', JSON.stringify({ queue: [] }));
-    localStorage.setItem('counter', 0);
+    localStorage.setItem('counter', parseInt(0));
     document.querySelector('.tracker').innerHTML = '';
 }
 function popup() {
